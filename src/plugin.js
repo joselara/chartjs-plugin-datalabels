@@ -220,7 +220,7 @@ var plugin = {
 		});
 	},
 
-	afterUpdate: function(chart, options) {
+	afterUpdate: function(chart, args, options) {
 		chart[EXPANDO_KEY]._labels = layout.prepare(
 			chart[EXPANDO_KEY]._datasets,
 			options);
